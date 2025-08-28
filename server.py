@@ -50,4 +50,4 @@ def reportWhoaCount(username: str) -> dict:
 if __name__ == "__main__":
   # Jalankan via SSE supaya bisa diakses pakai URL (localhost:8000)
   port = int(os.getenv("PORT", "8000"))
-  app.run("sse", port=port)
+  app.run("sse", host="0.0.0.0", port=port)
